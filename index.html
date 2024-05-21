@@ -88,6 +88,11 @@
             max-width: 300px;
             height: auto;
             margin-top: 20px;
+            border: 3px solid #444;
+        }
+
+        body.light-mode .caracteristica img {
+            border: 3px solid #ccc;
         }
 
         blockquote {
@@ -201,6 +206,11 @@
             max-width: 300px;
             height: auto;
             margin: 10px;
+            border: 3px solid #444;
+        }
+
+        body.light-mode .destacados img {
+            border: 3px solid #ccc;
         }
 
         .destacados {
@@ -213,6 +223,17 @@
             text-align: center;
             width: 100%;
             margin-top: 20px;
+            font-size: 1.5em;
+        }
+
+        .testimonial {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .stars {
+            color: gold;
+            font-size: 1.2em;
         }
     </style>
 </head>
@@ -241,7 +262,7 @@
                 <img src="https://zshopp.com/wp-content/uploads/2020/12/negro2-9.jpg" alt="Zapatos deportivos destacados 2">
                 <img src="https://assets.laboutiqueofficielle.com/w_450,q_auto,f_auto/media/products/2023/09/05/adidas_387757_IE2002_20230914T123604_01.jpg" alt="Zapatos deportivos destacados 3">
             </div>
-            <p>Encuentra los mejores zapatos deportivos para alcanzar tus metas.</p>
+            <center>Encuentra los mejores zapatos deportivos para alcanzar tus metas.</center><p></p>
         </section>
 
         <!-- Sección de características -->
@@ -267,11 +288,21 @@
         <!-- Sección de testimonios -->
         <section id="testimonios">
             <h2>Testimonios</h2>
-            <blockquote>
+            <div class="testimonial">
                 <p>¡Estos zapatos han transformado mi experiencia deportiva! ¡Son increíblemente cómodos y duraderos!</p>
+                <div class="stars">★★★★★</div>
                 <footer>María González</footer>
-            </blockquote>
-            <!-- Puedes agregar más testimonios si es necesario -->
+            </div>
+            <div class="testimonial">
+                <p>Los mejores zapatos que he comprado. Perfectos para correr y con un estilo genial.</p>
+                <div class="stars">★★★★★</div>
+                <footer>Juan Pérez</footer>
+            </div>
+            <div class="testimonial">
+                <p>Increíble calidad y muy buen soporte. Definitivamente los recomiendo.</p>
+                <div class="stars">★★★★★</div>
+                <footer>Laura Martínez</footer>
+            </div>
         </section>
 
         <!-- Sección de contacto -->
